@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,800&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #159957;
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  background: linear-gradient(to right, #155799, #159957);
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+@import "./_home.scss";
+@import "./_login_signup.scss";

@@ -1,28 +1,27 @@
-import "./App.scss";
+import "./styles/app.scss";
 
+// Import componenets
+import Home from "./components/Home";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div className="header">
-        <h1>Management Tool</h1>
-        <img src="img/logo512.png" alt="Logo" width="128" height="128" />
-        <div className="buttons">
-        <a>
-          <span class="text">Sign Up</span>
-          <span class="line -right"></span>
-          <span class="line -top"></span>
-          <span class="line -left"></span>
-          <span class="line -bottom"></span>
-        </a>
-        <a>
-          <span class="text">Login</span>
-          <span class="line -right"></span>
-          <span class="line -top"></span>
-          <span class="line -left"></span>
-          <span class="line -bottom"></span>
-        </a>
-        </div>
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/login" exact>
+            <Login />
+          </Route>
+          <Route path="signup/" exact>
+            <Signup />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

@@ -1,21 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,800&display=swap');
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html,
-body {
-  background: #159957;
-  background: -webkit-linear-gradient(to right, #155799, #159957);
-  background: linear-gradient(to right, #155799, #159957);
-  height: 100%;
-}
 
-.header h1{
-  font-family: 'Karla', sans-serif;
+.home h1{
   font-size: 3.5rem;
   color:rgb(220, 236, 250);
   margin-bottom: 1rem;
@@ -161,7 +145,7 @@ $color : #f26522;
   }
 }
 
-.header{
+.home{
   height:100vh;
   display: flex;
   justify-content:center;
