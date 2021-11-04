@@ -1,10 +1,12 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const Signup = () => {
   return (
     <div class="signup">
       <h1>Sign Up</h1>
-      <form method="post" autocomplete="off">
+      <form method="post" autocomplete="off" id="signup-form">
         <input
           type="email"
           name="email"
@@ -23,10 +25,16 @@ const Signup = () => {
           placeholder="Password"
           required="required"
         />
-        <button type="submit" class="btn btn-primary btn-block btn-large">
-          Sign me in.
+        <button
+          class="btn-flip"
+          data-back="Sign me in."
+          data-front="Sign me in."
+        >
         </button>
       </form>
+      <Link to="/login">
+        <span class="have_account">I'm a member!</span>
+      </Link>
     </div>
   );
 };

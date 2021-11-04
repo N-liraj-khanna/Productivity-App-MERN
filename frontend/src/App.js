@@ -4,6 +4,7 @@ import "./styles/app.scss";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Activities_List from "./components/Activities_List";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
@@ -11,15 +12,10 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/login" exact>
-            <Login />
-          </Route>
-          <Route path="signup/" exact>
-            <Signup />
-          </Route>
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/activities" component={Activities_List} />
+          <Route path="/" component={Home} />
         </Switch>
       </Router>
     </div>

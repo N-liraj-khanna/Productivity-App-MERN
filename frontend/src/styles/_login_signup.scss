@@ -1,0 +1,106 @@
+.login,
+.signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  width: 300px;
+  height: 300px;
+}
+.login h1,
+.signup h1 {
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  text-align: center;
+}
+.no_account,
+.have_account {
+  color: aliceblue;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2),
+    0 1px 1px rgba(255, 255, 255, 0.2);
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+input:focus {
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4),
+    0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+$speed: 0.5s;
+
+.btn-flip {
+  cursor: pointer;
+  border: none;
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:hover {
+    &:after {
+      opacity: 1;
+      transform: translateY(0) rotateX(0);
+    }
+
+    &:before {
+      opacity: 0;
+      transform: translateY(50%) rotateX(90deg);
+    }
+  }
+
+  &:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #323237;
+    display: block;
+    transition: $speed;
+    position: absolute;
+    background: #a3ffff;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: $speed;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
+}
