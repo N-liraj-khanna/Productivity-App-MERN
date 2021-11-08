@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "name": "productivity-app-mern",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./backend/app.js",
+    "dev": "nodemon ./backend/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-liraj-khanna/Productivity-App-MERN.git"
+  },
+  "author": "N LirajKhanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N-liraj-khanna/Productivity-App-MERN/issues"
+  },
+  "homepage": "https://github.com/N-liraj-khanna/Productivity-App-MERN#readme"
+}

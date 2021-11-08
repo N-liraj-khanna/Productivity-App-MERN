@@ -17,7 +17,6 @@ body {
   background: -o-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%); 
   background: -ms-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%);
   background: linear-gradient(135deg,  #fd1d1d 0%,#833ab4 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd1d1d', endColorstr='#833ab4',GradientType=1 ); 
   background-attachment: fixed;
 }
   
@@ -30,3 +29,4 @@ a {
 @import "./_home.scss";
 @import "./_login_signup.scss";
 @import "./_activities.scss";
+
