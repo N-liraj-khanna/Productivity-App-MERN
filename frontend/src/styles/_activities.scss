@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+
+.activities-list .heading {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  height: 15vh;
+}
+
+.activities-content{
+  display: flex;
+  overflow-x: scroll;
+  align-items: flex-start;
+  height: 85vh;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+
+.activity .topic {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.activity .description {
+  font-size: 1rem;
+  font-family: "Architects Daughter", cursive;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.activity {
+  background-color: rgb(231, 222, 222);
+  margin: 1rem 0.5rem 1rem 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 15rem;
+  max-width: 20rem;
+}
+
+.activity p{
+  overflow-y: auto;
+  max-height: 25rem;
+}
+
+.activity p::-webkit-scrollbar {
+  width: 10px;
+  left:-1000px;
+}
+
+.activity p::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.activity p::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-left: 0;
+  border-right: 0;
+  background-color: #e7dede;
+}
+
+.activity p::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(158, 178, 182);
+}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
-    <div class="signup">
+    <div className="signup">
       <h1>Sign Up</h1>
       <form method="post" autocomplete="off" id="signup-form">
         <input
@@ -33,7 +33,7 @@ const Signup = () => {
         </button>
       </form>
       <Link to="/login">
-        <span class="have_account">I'm a member!</span>
+        <span className="have_account">I'm a member!</span>
       </Link>
     </div>
   );

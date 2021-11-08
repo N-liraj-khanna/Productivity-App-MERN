@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div class="login">
+    <div className="login">
       <h1>Login</h1>
       <form method="post" autocomplete="off">
         <input
@@ -19,14 +19,14 @@ const Login = () => {
           required="required"
         />
         <button
-          class="btn-flip"
+          className="btn-flip"
           data-back="Let me in."
           data-front="Let me in."
         >
         </button>
       </form>
       <Link to="/signup">
-        <span class="no_account">No Account?</span>
+        <span className="no_account">No Account?</span>
       </Link>
     </div>
   );

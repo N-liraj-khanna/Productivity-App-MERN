@@ -8,6 +8,7 @@ import Activities_List from "./components/Activities_List";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
+
   return (
     <div className="App">
       <Router>

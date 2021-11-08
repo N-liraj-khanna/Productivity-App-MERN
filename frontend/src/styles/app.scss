@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,800&display=swap");
 *,
 *::after,
 *::before {
@@ -8,15 +8,25 @@
 }
 html,
 body {
-  background: #159957;
-  background: -webkit-linear-gradient(to right, #155799, #159957);
-  background: linear-gradient(to right, #155799, #159957);
-  height: 100%;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
+  min-height: 100%;
+  background: #fd1d1d; 
+  background: -moz-linear-gradient(-45deg,  #fd1d1d 0%, #833ab4 100%); 
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fd1d1d), color-stop(100%,#833ab4));
+  background: -webkit-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%);
+  background: -o-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%); 
+  background: -ms-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%);
+  background: linear-gradient(135deg,  #fd1d1d 0%,#833ab4 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd1d1d', endColorstr='#833ab4',GradientType=1 ); 
+  background-attachment: fixed;
 }
-a{
+  
+
+a {
   text-decoration: none;
 }
 
+
 @import "./_home.scss";
 @import "./_login_signup.scss";
+@import "./_activities.scss";
