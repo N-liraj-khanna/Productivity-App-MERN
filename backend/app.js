@@ -1,14 +1,20 @@
 //* Imports
+const body_parser = require("body-parser");
+const router = require("./router/routes");
+const connectDB = require("./config/db");
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const body_parser = require("body-parser");
-const router = require("./router/routes");
+require("colors")
+
+// Starting connection in DB
+connectDB();
 
 //*  Contants
 const app = express();
-dotenv.config({ path: "config.env" });
-const PORT = process.env.PORT || 5000;
+dotenv.config({ path: "./backend/config/config.env" });
+const PORT = process.env.PORT || 8000;
+
 
 //* Middlewares
 app.use(body_parser.urlencoded({ extended: false }));
@@ -21,9 +27,10 @@ app.get("/", (req, res) => {
   res.send("Welcome to Productivity App! Be productive!!");
 });
 
+
 //* General Configuration
 app.disable("x-powered-by");
 
 app.listen(PORT, () => {
-  console.log("Server up and running on PORT " + PORT);
+  console.log(`Server up and running on PORT ${PORT} `.bgCyan.black);
 });

@@ -1,7 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import jwt from "jsonwebtoken";
 
 const Home = () => {
+  const history = useHistory();
+  try{
+    if (jwt.verify(localStorage.getItem("token"), process.env.REACT_APP_JWT_SECRET_KEY)) {
+    history.replace("/activities")
+    }
+  }catch (e) {
+    console.log("Welcome!")
+  }
   return (
     <div className="home">
       <h1>Management Tool</h1>

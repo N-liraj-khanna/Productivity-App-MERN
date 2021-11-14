@@ -1,9 +1,13 @@
 {
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12"
   },
   "name": "productivity-app-mern",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
@@ -11,7 +15,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./backend/app.js",
-    "dev": "nodemon ./backend/app.js"
+    "dev-backend": "nodemon ./backend/app.js",
+    "dev-frontend": "cd frontend && npm start",
+    "dev": "concurrently --kill-others \"npm run dev-backend\" \"npm run dev-frontend\""
   },
   "repository": {
     "type": "git",
@@ -22,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/N-liraj-khanna/Productivity-App-MERN/issues"
   },
-  "homepage": "https://github.com/N-liraj-khanna/Productivity-App-MERN#readme"
+  "homepage": "https://github.com/N-liraj-khanna/Productivity-App-MERN#readme",
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
 }

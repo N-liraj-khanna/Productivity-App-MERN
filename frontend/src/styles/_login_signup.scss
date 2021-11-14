@@ -67,6 +67,7 @@ $speed: 0.5s;
     &:after {
       opacity: 1;
       transform: translateY(0) rotateX(0);
+      color: white;
     }
 
     &:before {
@@ -84,7 +85,7 @@ $speed: 0.5s;
     display: block;
     transition: $speed;
     position: absolute;
-    background: #a3ffff;
+    background: #999999;
     content: attr(data-back);
     transform: translateY(-50%) rotateX(90deg);
   }
@@ -103,4 +104,15 @@ $speed: 0.5s;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
   }
+}
+
+.error{
+  color: rgb(241, 155, 155);
+  text-align: right;
+  margin-right: 0.3rem;
+  margin-bottom: 0.2rem ;
+}
+.error-activities{
+  color: rgb(241, 155, 155);
+  margin-left: 1rem;
 }

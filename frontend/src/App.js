@@ -4,7 +4,7 @@ import "./styles/app.scss";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Activities_List from "./components/Activities_List";
+import ActivitiesList from "./components/ActivitiesList";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
-          <Route path="/activities" component={Activities_List} />
+          <Route path="/activities" component={ActivitiesList} />
           <Route path="/" component={Home} />
         </Switch>
       </Router>
